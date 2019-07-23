@@ -39,7 +39,6 @@ function makeLinksIncognito() {
  window.addEventListener("DOMNodeInserted", function(event) {
    if (event.target.className == undefined) { return; }
    if (event.target.className == "ii gt") {
-      console.log(event.target.className);
       makeLinksIncognito();
    }
  });
